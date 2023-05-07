@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Noto Sans JP", sans-serif;
+}
+header {
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 180px;
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 5;
+}
+header ul {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+header p {
+  font-size: 24px;
+  font-weight: bold;
+}
+header a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.firstView h1 {
+  font-size: 64px;
+  text-align: center;
+  padding-top: 320px;
+}
+.firstView p {
+  font-size: 14px;
+  text-align: center;
+}
+.firstView {
+  background-image: url(./images/hero-image.png);
+  height: 800px;
+  background-size: cover;
+}
+
+.about {
+  padding: 180px;
+}
+.profile h2 {
+  font-size: 64px;
+  letter-spacing: 0.1em;
+}
+.profile h3 {
+  font-size: 24px;
+  margin-top: 72px;
+}
+.profile p {
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+.profile img {
+  width: 480px;
+  height: 270px;
+  margin-left: 100px;
+}
+.profile .profile-text {
+  width: 500px;
+  float: left;
+}
+
+.clearfix {
+  clear: both;
+}
+.school-club {
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.school-club img {
+  width: 480px;
+  height: 270px;
+  border-radius: 16px;
+}
+.school-club h3 {
+  margin-top: 8px;
+}
+.school-club p {
+  margin-top: 16px;
+}
+
+.club {
+  position: relative;
+  padding: 180px;
+  background-color: #fffdf3;
+}
+
+.club-text {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(0, -50%);
+  z-index: 4;
+}
+
+.club-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.club-text p {
+  font-size: 18px;
+}
+
+.club-img {
+  position: relative;
+  height: 740px;
+  width: 600px;
+}
+
+.club-img img {
+  position: absolute;
+}
+
+.club-img img:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 400px;
+  z-index: 3;
+}
+.club-img img:nth-child(2) {
+  bottom: 0;
+  left: 40px;
+  width: 500px;
+  z-index: 1;
+}
+.club-img img:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  z-index: 2;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+.school-club a {
+  border-bottom: 1px solid #000;
+  margin-top: 32px;
+  display: inline-block;
+}
+
+.favorite {
+  text-align: center;
+  padding: 180px 180px 240px 180px;
+  background-image: url(images/favorite-background.png);
+  background-size: cover;
+}
+.favorite h2 {
+  font-size: 64px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid #fff;
+  display: inline-block;
+}
+
+.favorite-contents {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.favorite-content {
+  width: 320px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+}
+.favorite-content h3 {
+  margin-top: 16px;
+  font-size: 24px;
+}
+
+.favorite-content p {
+  margin-top: 32px;
+  font-size: 16px;
+  text-align: left;
+}
+.favorite-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.works {
+  padding: 180px;
+  text-align: center;
+  background: #fffdf3;
+}
+
+.works h2 {
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid #ff9900;
+  display: inline-block;
+}
+.works-content {
+  display: flex;
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 40px;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.works-content img {
+  width: 320px;
+  height: 180px;
+}
+
+.works-content .works-text {
+  margin-left: 32px;
+}
+.works-content h3 {
+  font-size: 28px;
+}
+.works-content p {
+  font-size: 16px;
+  padding-top: 16px;
+}
+.works-content span {
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.contact {
+  padding: 180px 370px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 64px;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid #ff9900;
+  display: inline-block;
+}
+.contact p {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  margin-top: 48px;
+  text-align: left;
+}
+.contact .sns {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact a {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #fff;
+  width: 200px;
+  line-height: 80px;
+  display: inline-block;
+  border-radius: 16px;
+}
+.contact .sns-twitter {
+  background-color: #00acee;
+}
+.contact .sns-facebook {
+  background-color: #3b5998;
+}
+.contact .sns-website {
+  background-color: #333;
+}
+
+footer {
+  height: 80px;
+  background-color: #edece7;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
